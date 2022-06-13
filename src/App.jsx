@@ -1,4 +1,5 @@
 import HeroSection from "./Components/HeroSection"
+import About from "./Components/About"
 
 function App() {
   
@@ -6,6 +7,7 @@ function App() {
   return (
     <div className="">
       <HeroSection/>
+      <About/>
     </div>
   )
 }

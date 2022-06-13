@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi";
 import Logo from '../assets/logo1.png'
 import Image from '../assets/herosection.webp'
+import HeroCover from '../assets/cover.jpg'
 
 function HeroSection() {
 
@@ -15,10 +16,10 @@ function HeroSection() {
       const [showMenu, setShowMenu] = useState(false)
 
       return (
-        <div className="relative overflow-hidden w-full lg:h-screen" >
+        <div className="relative overflow-hidden w-full" >
           <div className="max-w-7xl mx-auto">
             <div
-              /*Parte texto Hero & Poligono*/ className="relative lg:h-screen z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary">
+              /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary">
               <svg
                 /* poligono */ className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-primary transform translate-x-1/2 "
                 fill="currentColor"
@@ -126,7 +127,7 @@ function HeroSection() {
                     <div className="rounded-md shadow">
                       <a
                         href="https://tailwindui.com/components/marketing/sections/heroes"
-                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-secondary hover:bg-secondary/80 md:py-4 md:text-lg md:px-10"
+                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-secondary hover:bg-secondary/80 md:py-4 md:text-lg md:px-10 uppercase"
                       >
                         Contactame
                       </a>
