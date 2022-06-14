@@ -16,7 +16,7 @@ function HeroSection() {
       const [showMenu, setShowMenu] = useState(false)
 
       return (
-        <div className="relative overflow-hidden w-full" >
+        <div className="relative overflow-hidden w-full shadow-lg" >
           <div className="max-w-7xl mx-auto">
             <div
               /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary">

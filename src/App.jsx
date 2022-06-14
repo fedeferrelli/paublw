@@ -1,5 +1,6 @@
 import HeroSection from "./Components/HeroSection"
 import About from "./Components/About"
+import Contact from "./Components/ContactMain"
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <div className="">
       <HeroSection/>
       <About/>
+      <Contact/>
     </div>
   )
 }
