@@ -20,8 +20,8 @@ function Contact() {
             Contacto
           </h1>
 
-          <p className="m-auto mt-3 text-base text-primary/90 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl text-center font-light">
-            Si queres podés enviarme un mensaje, contactarme por mail, telefono o whatsApp.
+          <p className="m-auto mt-3 text-base tracking-wider text-primary/90 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl text-center font-light">
+            Si queres podés enviarme un mensaje, contactarme por mail, instagram<span className="sm:hidden">, teléfono</span> o whatsApp.
           </p>
         </section>
 

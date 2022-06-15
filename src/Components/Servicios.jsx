@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 function Servicios() {
 
-const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Criterios para comenzar", "Cómo ofrecer los alimentos", "Condiciones generales del ambiente", "Arcadas y atragantamiento", "Alimentos a evitar antes del año", "Transición desde alimentación con papillas"  ]
+const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Cómo comenzar", "Ofrecer alimentos", "Ambiente", "Arcadas y atragantamiento", "Alimentos a evitar", "Desde alimentación con papillas"  ]
 
   return (
     <main className="flex flex-col justify-center pb-20 bg-secondary/5">
@@ -15,22 +15,26 @@ const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Criterios para co
       <Fade direction="up" fraction="0" duration="1000" triggerOnce>
       <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
-        <div className="w-full">
+        <div className="w-full px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
            
-          <p className="m-auto mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl text-center font-light">
+          <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
           Acompañamiento integral a padres, familiares, cuidadores, docentes, profesionales de niños que
 deseen implementar el método BLW y transitar los primeros pasos de la alimentación
 complementaria de forma segura, respetuosa y responsable.
+          </p>
+
+          <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
+          Las consultas pueden ser presenciales o virtuales. Asimismo, te quedará material para consultar permanentemente y siemppre podés contactarte nuevamente conmigo. 
           </p>
  
 
         </div>
 
-        <div className="w-full sm:mt-0 mt-10 flex justify-center order-1 ">
+        <div className="w-full sm:mt-0 mt-10 flex justify-center order-1 px-8">
          
-          <div className="m-autosm:h-auto sm:w-full  flex flex-wrap gap-y-4">
+          <div className="m-auto sm:h-auto sm:w-full flex flex-wrap gap-y-4">
            {servicios.map(servicio=>(
-             <div key={servicio} className="bg-secondary/80 sm:hover:bg-secondary ease-in-out duration-300 px-4 py-2 rounded-full text-primary m-auto font-light shadow-md shadow-gray-600"> {servicio} </div>
+             <div key={servicio} className="w-auto bg-secondary/80 sm:hover:bg-secondary ease-in-out duration-300 px-3 py-2 rounded-full text-primary m-auto font-light shadow-md shadow-gray-600"> {servicio} </div>
            ))}
           </div>
           

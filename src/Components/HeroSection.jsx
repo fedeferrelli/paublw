@@ -16,10 +16,10 @@ function HeroSection() {
       const [showMenu, setShowMenu] = useState(false)
 
       return (
-        <div className="relative overflow-hidden w-full shadow-lg" >
+        <div className="relative overflow-hidden w-full shadow-lg sm:h-screen sm:max-h-[750px]" >
           <div className="max-w-7xl mx-auto">
             <div
-              /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary">
+              /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary sm:h-screen sm:max-h-[750px]">
               <svg
                 /* poligono */ className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-primary transform translate-x-1/2 "
                 fill="currentColor"

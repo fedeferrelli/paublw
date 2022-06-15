@@ -12,16 +12,17 @@ function About() {
       <Fade direction="up" triggerOnce>
       <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
-        <div className="w-full order-2 sm:order-1">
+        <div className="w-full order-2 sm:order-1 px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
+      
            
-          <p className="m-auto mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl text-center font-light">
+        <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
             Mi nombre es Paula, comencé mi recorrido profesional estudiando
             psicología, en el año 2018 me convertí en mamá de una hermosa
             pequeña. Mi tránsito por la maternidad ha generado muchos
             interrogantes en mí, algunos de ellos trazaron el camino que me
             condujo hasta acá.
           </p>
-          <p className="m-auto mt-3 text-base text-terciary sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl text-center font-light">
+          <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
             Estudié Psicología, orienté mi formación teórica hacia la clínica
             psicoanalítica con niños, adolescentes y adultos. Realicé mi
             formación acerca de la alimentación complementaria y BLW en la
