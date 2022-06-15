@@ -1,5 +1,6 @@
 import HeroSection from "./Components/HeroSection"
 import About from "./Components/About"
+import Servicios from "./Components/Servicios"
 import Contact from "./Components/ContactMain"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="">
       <HeroSection/>
       <About/>
+      <Servicios/>
       <Contact/>
     </div>
   )

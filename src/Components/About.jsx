@@ -4,16 +4,16 @@ import { Fade } from "react-awesome-reveal";
 
 function About() {
   return (
-    <main className="flex flex-col justify-center pb-20 bg-secondary/5">
+    <main className="flex flex-col justify-center pb-4 bg-secondary/5">
       {/*  <div className="bg-secondary/10 w-full h-2"></div> */}
       <h1 className="m-auto text-3xl tracking-tight font-extrabold text-secondary sm:text-5xl   mt-10">
         Quien soy
       </h1>
-
+      <Fade direction="up" triggerOnce>
       <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
         <div className="w-full order-2 sm:order-1">
-            <Fade direction="right">
+           
           <p className="m-auto mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl text-center font-light">
             Mi nombre es Paula, comencé mi recorrido profesional estudiando
             psicología, en el año 2018 me convertí en mamá de una hermosa
@@ -37,11 +37,11 @@ function About() {
                       </a>
                     </div>
 
-          </Fade>
+         
         </div>
 
         <div className="w-full sm:mt-0 mt-10 flex justify-center">
-            <Fade direction="left" duration="1000" className="flex">
+            
           <div className="m-auto border box-content border-secondary/50  w-full sm:h-auto sm:w-2/3 overflow-hidden shadow-secondary/50 drop-shadow-4xl">
             <img
               className="m-auto w-auto h-auto  object-cover"
@@ -49,9 +49,10 @@ function About() {
               alt="Image hero section"
             />
           </div>
-          </Fade>
+          
         </div>
       </section>
+      </Fade>
     </main>
   );
 }
