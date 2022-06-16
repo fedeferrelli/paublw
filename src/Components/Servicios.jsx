@@ -12,7 +12,7 @@ const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Cómo comenzar", 
       <h1 className="m-auto text-3xl tracking-tight font-extrabold text-secondary sm:text-5xl   mt-10">
         Servicios
       </h1>
-      <Fade direction="up" fraction="0" duration="1000" triggerOnce>
+      <Fade fraction="0" duration="1000" triggerOnce>
       <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
         <div className="w-full px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">

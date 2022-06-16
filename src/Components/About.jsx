@@ -9,7 +9,7 @@ function About() {
       <h1 className="m-auto text-3xl tracking-tight font-extrabold text-secondary sm:text-5xl   mt-10">
         Quien soy
       </h1>
-      <Fade direction="up" triggerOnce>
+      <Fade triggerOnce>
       <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
         <div className="w-full order-2 sm:order-1 px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
