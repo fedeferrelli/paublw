@@ -19,7 +19,7 @@ function HeroSection() {
         <div className="relative overflow-hidden w-full shadow-lg sm:h-screen sm:max-h-[750px]" >
           <div className="max-w-7xl mx-auto">
             <div
-              /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary sm:h-screen sm:max-h-[750px]">
+              /*Parte texto Hero & Poligono*/ className="relative z-10 pb-8  sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 bg-primary sm:h-screen sm:max-h-[750px] ">
               <svg
                 /* poligono */ className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-primary transform translate-x-1/2 "
                 fill="currentColor"
@@ -123,8 +123,22 @@ function HeroSection() {
                     Bienvenida a mi página web. <span className="block">Acá podés encontrar todo lo que
                     tengo para ayudarte</span> 
                   </p>
+
+                  <p className="sm:hidden mt-3 text-base text-terciary sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          Acompañamiento integral a padres, familiares, cuidadores, docentes, profesionales de niños que
+deseen implementar el método BLW y transitar los primeros pasos de la alimentación
+complementaria de forma segura, respetuosa y responsable.
+          </p>
+
+
+
+
+
+
+
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="rounded-md shadow">
+
                       <a
                         href="https://tailwindui.com/components/marketing/sections/heroes"
                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-secondary hover:bg-secondary/80 md:py-4 md:text-lg md:px-10 uppercase"

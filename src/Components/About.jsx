@@ -10,9 +10,9 @@ function About() {
         Quien soy
       </h1>
       <Fade triggerOnce>
-      <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
+      <section className="px-4 m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
-        <div className="w-full order-2 sm:order-1 px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
+        <div className="w-full order-2 sm:order-1 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
       
            
         <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">

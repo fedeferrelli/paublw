@@ -7,17 +7,17 @@ function Servicios() {
 const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Cómo comenzar", "Ofrecer alimentos", "Ambiente", "Arcadas y atragantamiento", "Alimentos a evitar", "Desde alimentación con papillas"  ]
 
   return (
-    <main className="flex flex-col justify-center pb-20 bg-secondary/5">
+    <main className="flex flex-col justify-center pb-2 bg-secondary/5">
      
       <h1 className="m-auto text-3xl tracking-tight font-extrabold text-secondary sm:text-5xl   mt-10">
         Servicios
       </h1>
       <Fade fraction="0" duration="1000" triggerOnce>
-      <section className="w-11/12 m-auto flex flex-col sm:flex-row sm:mt-10 ">
+      <section className=" m-auto flex flex-col sm:flex-row sm:mt-10 ">
         
         <div className="w-full px-8 tracking-wider max-w-prose text-base text-gray-600 sm:text-lg md:text-xl text-center font-light">
            
-          <p className="m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
+          <p className="hidden sm:flex m-auto mt-3  sm:mt-5  sm:max-w-xl sm:mx-auto md:mt-5 ">
           Acompañamiento integral a padres, familiares, cuidadores, docentes, profesionales de niños que
 deseen implementar el método BLW y transitar los primeros pasos de la alimentación
 complementaria de forma segura, respetuosa y responsable.
