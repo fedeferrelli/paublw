@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/coverAbout_2.jpg";
+import Image from '../../src/assets/servicios_foto.jpg'
 import { Fade } from "react-awesome-reveal";
 
 function Servicios() {
@@ -8,6 +8,8 @@ const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Cómo comenzar", 
 
   return (
     <main className="flex flex-col justify-center pb-2 bg-secondary/5">
+
+
      
       <h1 className="m-auto text-3xl tracking-tight font-extrabold text-secondary sm:text-5xl   mt-10">
         Servicios

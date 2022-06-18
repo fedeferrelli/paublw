@@ -54,6 +54,9 @@ function About() {
         </div>
       </section>
       </Fade>
+      <div className="w-full h-48 sm:h-96 overflow-hidden relative mt-8  bg-cover">
+        <img src="https://www.clinicalascondes.cl/getattachment/40c29ccd-793e-491b-9f5e-02f014aa067e/" alt="food blw" className="w-full absolute sm:-mt-20"></img>
+      </div>
     </main>
   );
 }

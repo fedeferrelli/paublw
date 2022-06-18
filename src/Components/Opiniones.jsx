@@ -4,7 +4,7 @@ import opiniones from '../assets/contactIcons/utils/opiniones';
 
 function Opiniones() {
     return (
-        <main className="flex flex-col justify-center pb-2 bg-secondary/5">
+        <main className="flex flex-col justify-center pb-0 bg-secondary/5">
      
         <Fade fraction="0" duration="1000" triggerOnce>
         
@@ -23,6 +23,10 @@ function Opiniones() {
             
           
         </Fade>
+
+        <div className="w-full h-48 sm:h-96 overflow-hidden relative mt-8  bg-cover">
+        <img src="https://images-prod.healthline.com/hlcmsresource/images/AN_images/baby-led-weaning-1296x728-feature.jpg" alt="food blw" className="w-full absolute sm:-mt-20"></img>
+      </div>
       </main>
     )
 }
