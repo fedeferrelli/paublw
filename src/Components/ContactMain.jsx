@@ -14,7 +14,7 @@ function Contact() {
 
   return (
     <Fade duration="1000" triggerOnce className="w-full pb-4 bg-secondary">
-      <main className="flex flex-col min-h-screen  w-full ">
+      <main className="flex flex-col min-h-screen  w-full" name='contacto'>
         <section className="bg-alternative p-4 flex  flex-col w-full">
           <h1 className="m-auto text-3xl tracking-tight font-extrabold text-primary/90 sm:text-5xl   mt-10">
             Contacto

@@ -7,7 +7,7 @@ function Servicios() {
 const servicios = ["¿Qué es el BLW?", "Beneficios del BLW", "Cómo comenzar", "Ofrecer alimentos", "Ambiente", "Arcadas y atragantamiento", "Alimentos a evitar", "Desde alimentación con papillas"  ]
 
   return (
-    <main className="flex flex-col justify-center pb-2 bg-secondary/5">
+    <main className="flex flex-col justify-center pb-2 bg-secondary/5" name='servicios'>
 
 
      

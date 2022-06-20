@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi";
-import Logo from '../assets/logo1.png'
+import {AiOutlineCloseCircle} from 'react-icons/ai'
 import Image from '../assets/herosection.webp'
-import HeroCover from '../assets/cover.jpg'
+import {Link} from 'react-scroll'
 
 function HeroSection() {
 
     const navigation = [
-        { name: "Quien Soy", href: "https://portafolio-fedeferrelli.vercel.app/" },
-        { name: "Servicios", href: "#" },
-        { name: "Opiniones", href: "#" },
-        { name: "Contacto", href: "#" },
+        { name: "Quien Soy", to: "quien_soy", duration: 800 },
+        { name: "Servicios", to: "servicios", duration: 1300 },
+        { name: "Opiniones", to: "opiniones", duration: 1500 },
+        { name: "Contacto", to: "contacto", duration: 1800 },
       ];
 
       const [showMenu, setShowMenu] = useState(false)
@@ -31,37 +31,40 @@ function HeroSection() {
               </svg>
     
               <section /* NavBar big screen */ className="">
-                <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+              <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
                   <nav
                     className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                     aria-label="Global"
                   >
                     <div /* Logos */ className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                      <div className="flex items-center justify-between w-full md:w-auto">
-                        <a href="https://portafolio-fedeferrelli.vercel.app/">
+                      <div className="flex items-center justify-right w-full md:w-auto">
+                {/*         <a href="https://portafolio-fedeferrelli.vercel.app/">
                           <img
                             alt="Workflow"
                             className="h-8 w-auto sm:h-10"
                             src={Logo}
                           />
-                        </a>
-                        <div className="-mr-2 flex items-center md:hidden">
-                          <button className="bg-primary rounded-md p-2 inline-flex items-center justify-center text-terciary/90 hover:text-terciary hover:bg-terciary/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary/50">
+                        </a> */}
+                        <div className="flex justify-end w-full md:hidden">
+                          <button className="bg-primary rounded-md p-2 inline-flex items-center mr-0  text-terciary/90 hover:text-terciary hover:bg-terciary/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary/50 text-xl">
                             <span className="sr-only">Open main menu</span>
                             <GiHamburgerMenu onClick={()=>setShowMenu(true)}/>
                           </button>
                         </div>
                       </div>
                     </div>
-                    <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                    <div className="hidden md:block md:ml-0 md:pr-4 md:space-x-8 text-lg">
                       {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="font-medium text-terciary hover:text-terciary/80"
+                        <Link
+                        key={item.name}
+                        to={item.to} 
+                        spy={true} 
+                        smooth={true} 
+                        duration={item.duration}
+                        className="font-medium text-terciary cursor-pointer hover:text-terciary/80"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                   
                     </div>
@@ -77,32 +80,35 @@ function HeroSection() {
 
                   <div className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                     <div className="rounded-lg shadow-md bg-primary ring-1 ring-black ring-opacity-5 overflow-hidden">
-                      <div className="px-5 pt-4 flex items-center justify-between ">
-                        <div>
+                      <div className="px-5 pt-4 flex items-center justify-end ">
+                {/*         <div>
                           <img
                             className="h-8 w-auto"
                             src={Logo}
                             alt="logo image"
                           />
-                        </div>
+                        </div> */}
                         <div className="-mr-2">
                           <button className="bg-primary rounded-md p-2 inline-flex items-center justify-center text-terciary/90 hover:text-terciary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
                             <span className="sr-only">Close main menu</span>
-                            <GiCrossMark className="h-6 w-6" aria-hidden="true" />
+                            <AiOutlineCloseCircle className="h-8 w-8" aria-hidden="true" />
                           </button>
                         </div>
                       </div>
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            target='_blank'
-                            rel="noreferrer"
-                            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </a>
+                          
+                        <Link
+                        key={item.name}
+                        to={item.to} 
+                        spy={true} 
+                        smooth={true} 
+                        duration={item.duration}
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                        onClick={()=> setShowMenu(false)}
+                        >
+                          {item.name}
+                        </Link>
                         ))}
                       </div>
                      
