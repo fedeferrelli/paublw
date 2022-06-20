@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/coverAbout_2.jpg";
+import Image from "../assets/coverAbout_1.jpg";
 import { Fade } from "react-awesome-reveal";
 import {Link} from 'react-scroll'
 
