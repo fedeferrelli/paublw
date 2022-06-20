@@ -145,12 +145,15 @@ complementaria de forma segura, respetuosa y responsable.
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="rounded-md shadow">
 
-                      <a
-                        href="https://tailwindui.com/components/marketing/sections/heroes"
+                      <Link
+                        to="contacto"
+                        spy={true}
+                        smooth={true}
+                        duration={1800}
                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-secondary hover:bg-secondary/80 md:py-4 md:text-lg md:px-10 uppercase"
                       >
                         Contactame
-                      </a>
+                      </Link>
                     </div>
    
                   </div>

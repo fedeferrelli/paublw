@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../assets/coverAbout_2.jpg";
 import { Fade } from "react-awesome-reveal";
+import {Link} from 'react-scroll'
 
 function About() {
   return (
@@ -30,12 +31,15 @@ function About() {
           </p>
 
           <div className="rounded-md shadow mt-5 sm:w-1/2  m-auto">
-                      <a
-                        href=""
+                      <Link
+                        to="contacto"
+                        spy={true} 
+                        smooth={true}
+                        duration={1300}
                         className="w-full  flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-secondary hover:bg-secondary/80 md:py-4 md:text-lg md:px-10 uppercase"
                       >
                         Contactame
-                      </a>
+                      </Link>
                     </div>
 
          
